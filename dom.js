@@ -22,6 +22,26 @@ console.log(listItems)
 for(let i=0; i<listItems.length; i++){
     if(i%2==0)
     {
-        listItems[i].style.backgroundColor="grey"
+        listItems[i].style.backgroundColor="magenta"
     }
 }
+
+console.log(document.getElementById("container"))
+
+console.log(document.getElementsByClassName("list-item"))
+
+//getElementsByTagName
+
+console.log(document.getElementsByTagName("h2"))
+
+document.getElementById("main-title").textContent = "Glavni naslov"
+let title = document.getElementById("main-title")
+title.textContent = "Promena"
+
+listItems[3].textContent="Cetvrti"
+
+listItems[3].style.backgroundColor="purple"
+
+//querySelector
+
+document.querySelector("#random-element p").style.backgroundColor="aqua"
