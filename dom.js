@@ -44,4 +44,45 @@ listItems[3].style.backgroundColor="purple"
 
 //querySelector
 
-document.querySelector("#random-element p").style.backgroundColor="aqua"
+document.querySelector("#random-element p").style.backgroundColor="violet"
+
+let listitem = document.getElementById("items")
+
+//parentNode
+
+console.log(items.parentNode);
+items.parentNode.style.backgroundColor="orchid"
+
+//parentElement
+
+console.log(items.parentElement)
+
+//
+
+console.log(items.childNodes)
+
+items.childNodes[1].style.backgroundColor="brown"
+
+//children (element)
+
+console.log(items.children);
+
+items.children[0].style.backgroundColor="lavender"
+
+//firstChild
+//firstElementChild
+
+console.log(items.firstElementChild); // items.children[0]
+//items.lastElementChild; // items.children[items.children.length]
+
+//sibling
+
+console.log(items.previousElementSibling);
+
+items.previousElementSibling.style.color="purple";
+
+console.log(items.nextElementSibling)
+
+let drugiElement = document.getElementsByClassName("list-item")[1];
+
+drugiElement.parentElement.previousElementSibling.style.backgroundColor="magenta"
